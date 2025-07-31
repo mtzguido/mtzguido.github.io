@@ -1,0 +1,148 @@
+<meta charset="utf-8"/>
+<html>
+<header>
+  <style>
+    table {
+      border-collapse: collapse;
+      border: 1px solid grey;
+      width: 100%;
+    }
+
+    th {
+      border: 1px solid grey;
+      text-align: center;
+      padding: 4px;
+    }
+    td {
+      border: 1px solid grey;
+      text-align: left;
+      padding: 4px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #F4F4F4;
+    }
+  </style>
+  <title>Optativa Verificación con F*</title>
+</header>
+
+<body><center><div style="text-align: left; width: min(100%, 60em); font-family:sans-serif">
+
+<h1 style="margin-top: 1em">
+ Introducción a la Verificación Formal
+</h1>
+<h2>Dictado 2025</h2>
+
+Repositorio de la materia: <a href="https://github.com/mtzguido/intro-verif-24">https://github.com/mtzguido/intro-verif-24</a><br>
+<br>
+
+Materias previas: ALP.
+<b>MUY</b> recomendadas: Ingeniería de Software 1, Seguridad Informática.<br>
+<br>
+
+Libro:
+  <a href="https://fstar-lang.org/tutorial/proof-oriented-programming-in-fstar.pdf">&#9733 PDF</a>
+  <a href="https://fstar-lang.org/tutorial/">&#9733 Interactivo</a>
+  <a href="bib/proof-oriented-programming-in-fstar.pdf">&#9733 PDF estático (copiado 12/06/2024)</a>
+
+<h3>Clases</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Fecha</th>
+      <th style="width:70%">Tema</th>
+      <th>Diapositivas</th>
+      <th>Material</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+
+<h3>Bibliografía</h3>
+
+<h4>Requerida</h4>
+
+<ul>
+  <li><a href="https://fstar-lang.org/tutorial/proof-oriented-programming-in-fstar.pdf">Proof-Oriented Programming in F*</a>, capítulos 1-4, 6-8, 29 (por ahora)</li>
+  <li><a href="https://dl.acm.org/doi/10.1145/363235.363259">Hoare - An axiomatic basis for computer programming (1969)</a></li>
+</ul>
+
+<h4>Complementaria</h4>
+
+<ul>
+  <li>Métodos formales en la práctica
+    <ul>
+      <li><a href="https://arxiv.org/abs/2010.16345">Reid et al - Towards making formal methods normal: meeting developers where they are (2020)</a></li>
+      <li><a href="https://www.youtube.com/watch?v=oshxAJGrwMU">AWS re:Inforce 2024 - Proving the correctness of AWS authorization (IAM401)</a></li>
+    </ul>
+  </li>
+  <li>Bugs famosos
+    <ul>
+      <li><a href="https://en.wikipedia.org/wiki/Pentium_FDIV_bug">Bug FDIV del Pentium</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/Ariane_flight_V88">Vuelo Arianne V88</a></li>
+      <li><a href="https://heartbleed.com/">Heartbleed</a>: filtración de datos en OpenSSL</li>
+      <li><a href="https://arxiv.org/abs/1403.6676">Maleabilidad en Bitcoin, y Hackeo a MtGox</a></li>
+      <li><a href="https://spectreattack.com/spectre.pdf">Spectre</a>
+ y <a href="https://meltdownattack.com/meltdown.pdf">Meltdown</a>: bugs de hardware relacionados a ejecución especulativa</li>
+      <li><a href="https://www.whitehouse.gov/wp-content/uploads/2024/02/Final-ONCD-Technical-Report.pdf">Casa Blanca EE.UU. - Back to the Building Blocks: A Path Toward Secure and Measurable Software (2024)</a></li>
+    </ul>
+  </li>
+  <li>Verificación
+    <ul>
+      <li><a href="https://dl.acm.org/doi/10.1145/360933.360975">Dijkstra - Guarded commands, nondeterminacy and formal derivation of programs (1975)</a></li>
+    </ul>
+  </li>
+  <li>Lenguajes de Programación
+    <ul>
+      <li><a href="https://www2.cs.sfu.ca/CourseCentral/831/burton/Notes/July14/free.pdf">Wadler - Theorems for free! (1989)</a>: parametricidad y teoremas gratis</li>
+      <li><a href="https://www.youtube.com/watch?v=IOiZatlZtGU">Wadler - Propositions as types (2015)</a>: correspondencia Curry-Howard</li>
+      <li><a href="https://dl.acm.org/doi/pdf/10.1145/289423.289451">Augustsson - Cayenne - a language with dependent types (1998)</a></li>
+      <li><a href="https://www.cambridge.org/core/journals/journal-of-functional-programming/article/faking-it-simulating-dependent-types-in-haskell/A904B84CA962F2D75578445B703F199A">McBride - Faking it: Simulating dependent types in Haskell (2002)</a></li>
+    </ul>
+  </li>
+  <li>Verificación de programas con efectos
+    <ul>
+      <li><a href="https://arxiv.org/abs/1608.06499">Dijkstra Monads for Free (2017)</a></li>
+      <li><a href="https://arxiv.org/abs/1903.01237">Dijkstra Monads for All (2019)</a></li>
+    </ul>
+  </li>
+  <li>Verificando verificadores
+    <ul>
+      <li><a href="https://metacoq.github.io/">MetaCoq</a></li>
+      <li><a href="https://www.microsoft.com/en-us/research/publication/self-certification-bootstrapping-certified-typecheckers-in-f-with-coq/">Strub et al - Self-Certification: Bootstrapping Certified Typecheckers in F* with Coq (2012)</a></li>
+      <li><a href="https://www.mdpi.com/2227-7390/10/13/2264">Andrici, Ciobâcă - A Verified Implementation of the DPLL Algorithm in Dafny (2022)</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h4>Proyectos</h4>
+
+<ul>
+  <li>Usando F*
+    <ul>
+      <li><a href="https://github.com/hacl-star/hacl-star">HACL*</a>: criptografía verificada</li>
+      <li><a href="https://www.microsoft.com/en-us/research/blog/everparse-hardening-critical-attack-surfaces-with-formally-proven-message-parsers/">EverParse</a>: parsers verificados para formatos de red</li>
+    </ul>
+  </li>
+  <li>Otros proyectos importantes
+    <ul>
+      <li><a href="https://github.com/leanprover-community/mathlib4">Mathlib de Lean4</a></li>
+      <li><a href="https://compcert.org/">CompCert</a>: compilador de C verificado</li>
+      <li><a href="https://sel4.systems/">sel4</a>: microkernel</li>
+      <li><a href="https://deepspec.org/main">DeepSpec</a>: especificaciones profundas full-stack</li>
+      <li><a href="https://www.microsoft.com/en-us/research/project/z3-3/">Z3</a>: SMT solver (<a href="https://github.com/z3prover/z3">GitHub</a>)</li>
+    </ul>
+  </li>
+  <li>Sobre Lean:
+    <ul>
+      <li><a href="https://www.youtube.com/watch?v=Dp-mQ3HxgDE">Kevin Buzzard - The Future of Mathematics?</a></li>
+      <li><a href="https://www.youtube.com/watch?v=jQPb7DRMoZY">Kevin Buzzard - What Computers Can’t Do</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div></center></body>
+</html>
